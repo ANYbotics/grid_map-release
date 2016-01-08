@@ -1,0 +1,12 @@
+Source: ros-jade-grid-map-msgs
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-cmake-modules, ros-jade-geometry-msgs, ros-jade-message-generation, ros-jade-roscpp, ros-jade-std-msgs
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-jade-grid-map-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-cmake-modules, ros-jade-geometry-msgs, ros-jade-message-generation, ros-jade-roscpp, ros-jade-std-msgs
+Description: Definition of the multi-layered grid map message type.
