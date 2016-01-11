@@ -1,0 +1,12 @@
+Source: ros-indigo-grid-map-filters
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-filters, ros-indigo-grid-map, ros-indigo-grid-map-core, ros-indigo-grid-map-msgs
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-indigo-grid-map-filters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-filters, ros-indigo-grid-map, ros-indigo-grid-map-core, ros-indigo-grid-map-msgs
+Description: Processing grid maps as a sequence of ROS filters.
