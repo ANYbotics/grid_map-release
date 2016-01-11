@@ -1,0 +1,12 @@
+Source: ros-jade-grid-map-demos
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-geometry-msgs, ros-jade-grid-map, ros-jade-grid-map-loader, ros-jade-grid-map-msgs, ros-jade-grid-map-visualization, ros-jade-roscpp, ros-jade-sensor-msgs
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-jade-grid-map-demos
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-geometry-msgs, ros-jade-grid-map, ros-jade-grid-map-loader, ros-jade-grid-map-msgs, ros-jade-grid-map-visualization, ros-jade-roscpp, ros-jade-sensor-msgs
+Description: Demo nodes to demonstrate the usage of the grid map library.
