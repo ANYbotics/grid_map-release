@@ -1,0 +1,12 @@
+Source: ros-indigo-grid-map-loader
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-grid-map, ros-indigo-grid-map-msgs, ros-indigo-roscpp
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-indigo-grid-map-loader
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-grid-map, ros-indigo-grid-map-msgs, ros-indigo-roscpp
+Description: Loading and publishing grid maps from bag files.
