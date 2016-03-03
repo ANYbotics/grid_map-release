@@ -6,7 +6,7 @@ set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 ## Find catkin macros and libraries
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  grid_map
+  grid_map_ros
   grid_map_msgs
   geometry_msgs
   sensor_msgs
@@ -66,6 +66,16 @@ add_executable(
   src/ImageToGridmapDemo.cpp
 )
 
+add_executable(
+  move_demo
+  src/move_demo_node.cpp
+)
+
+add_executable(
+  iterator_benchmark
+  src/iterator_benchmark.cpp
+)
+
 ## Specify libraries to link a library or executable target against
 target_link_libraries(
   simple_demo
@@ -87,14 +97,28 @@ target_link_libraries(
   ${catkin_LIBRARIES}
 )
 
+target_link_libraries(
+  move_demo
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(
+  iterator_benchmark
+  ${catkin_LIBRARIES}
+)
 
 #############
 ## Install ##
 #############
 
+catkin_install_python(
+  PROGRAMS scripts/image_publisher.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 # Mark executables and/or libraries for installation
 install(
-  TARGETS simple_demo tutorial_demo iterators_demo image_to_gridmap_demo
+  TARGETS simple_demo tutorial_demo iterators_demo image_to_gridmap_demo move_demo iterator_benchmark
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -102,7 +126,7 @@ install(
 
 # Mark other files for installation
 install(
-  DIRECTORY doc launch rviz scripts
+  DIRECTORY config doc launch rviz scripts
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
