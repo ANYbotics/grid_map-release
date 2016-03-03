@@ -2,6 +2,12 @@
 Changelog for package grid_map_demos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.0 (2016-03-03)
+------------------
+* New iterator_benchmark demo to exemplify the usage of the iterators and their computational performance.
+* Added new move_demo to illustrate the difference between the `move` and `setPosition` method.
+* Contributors: Péter Fankhauser, Christos Zalidis, Daniel Stonier 
+
 1.1.3 (2016-01-11)
 ------------------
 
