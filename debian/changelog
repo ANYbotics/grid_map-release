@@ -1,0 +1,7 @@
+ros-indigo-grid-map (1.2.0-0saucy) saucy; urgency=high
+
+  * Added new package grid_map as metapackage (#34 <https://github.com/ethz-asl/grid_map/issues/34>).
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Wed, 02 Mar 2016 23:00:00 -0000
+
+
