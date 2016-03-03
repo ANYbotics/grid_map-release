@@ -152,7 +152,7 @@ bool checkIfPositionWithinMap(const Eigen::Vector2d& position,
   Vector2d positionTransformed = getMapFrameToBufferOrderTransformation().cast<double>() * (position - mapPosition - offset);
 
   if (positionTransformed.x() >= 0.0 && positionTransformed.y() >= 0.0
-      && positionTransformed.x() <= mapLength(0) && positionTransformed.y() <= mapLength(1)) {
+      && positionTransformed.x() < mapLength(0) && positionTransformed.y() < mapLength(1)) {
     return true;
   }
   return false;
@@ -468,10 +468,16 @@ Index getIndexFromBufferIndex(const Index& bufferIndex, const Size& bufferSize,
   return index;
 }
 
-unsigned int get1dIndexFrom2dIndex(const Eigen::Array2i& index, const Eigen::Array2i& bufferSize, const bool rowMajor)
+size_t getLinearIndexFromIndex(const Index& index, const Size& bufferSize, const bool rowMajor)
 {
   if (!rowMajor) return index(1) * bufferSize(0) + index(0);
   return index(0) * bufferSize(1) + index(1);
+}
+
+Index getIndexFromLinearIndex(const size_t linearIndex, const Size& bufferSize, const bool rowMajor)
+{
+  if (!rowMajor) return Index((int)linearIndex % bufferSize(0), (int)linearIndex / bufferSize(0));
+  return Index((int)linearIndex / bufferSize(1), (int)linearIndex % bufferSize(1));
 }
 
 void getIndicesForRegion(const Index& regionIndex, const Size& regionSize,
