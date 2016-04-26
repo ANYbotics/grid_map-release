@@ -2,6 +2,16 @@
 Changelog for package grid_map_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.0 (2016-04-26)
+------------------
+* Added new convenience function to change the resolution of grid maps with help of OpenCV interpolation methods (`#60 <https://github.com/ethz-asl/grid_map/issues/60>`_).
+* Separated OpenCV to grid map conversions to grid_map_cv package (also fixes `#56 <https://github.com/ethz-asl/grid_map/issues/56>`_)
+* Improved efficiency and generalized image to grid map conversion.
+* Added image conversion for different encodings and depth resolutions.
+* Fix scaling of image value to height conversion.
+* Improved efficiency of the grid map to point cloud conversion by omitting invalid cells.
+* Contributors: Peter Fankhauser, Daniel Stonier, Martin Wermelinger, Dominic Jud
+
 1.2.0 (2016-03-03)
 ------------------
 * Changed the package name from `grid_map` to `grid_map_ros` and made `grid_map` a metapackage (`#34 <https://github.com/ethz-asl/grid_map/issues/34>`_).
