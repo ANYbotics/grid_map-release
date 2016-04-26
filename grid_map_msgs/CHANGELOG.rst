@@ -2,6 +2,10 @@
 Changelog for package grid_map_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.0 (2016-04-26)
+------------------
+* Contributors: Peter Fankhauser
+
 1.2.0 (2016-03-03)
 ------------------
 * [grid_map_msgs] package exports
