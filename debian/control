@@ -1,0 +1,12 @@
+Source: ros-indigo-grid-map-cv
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), libopencv-dev, ros-indigo-catkin, ros-indigo-grid-map-core
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-indigo-grid-map-cv
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libopencv-dev, ros-indigo-grid-map-core
+Description: Conversions between grid maps and OpenCV images.
