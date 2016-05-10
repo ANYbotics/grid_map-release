@@ -2,6 +2,14 @@
 Changelog for package grid_map_core
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.3 (2016-05-10)
+------------------
+* Release for ROS Kinetic.
+* Contributors: Peter Fankhauser
+
+1.3.2 (2016-05-10)
+------------------
+
 1.3.1 (2016-05-10)
 ------------------
 * Cleanup up Eigen types as preparation for ROS Kinetic release.
