@@ -2,6 +2,11 @@
 Changelog for package grid_map_core
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.1 (2016-05-10)
+------------------
+* Cleanup up Eigen types as preparation for ROS Kinetic release.
+* Contributors: Peter Fankhauser
+
 1.3.0 (2016-04-26)
 ------------------
 * Made the `isInside` checks `const`.
