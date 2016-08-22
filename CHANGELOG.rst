@@ -2,6 +2,11 @@
 Changelog for package grid_map_core
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.0 (2016-08-22)
+------------------
+* Added convenience function to convert a grid map to form with circular buffer at (0,0).
+* Contributors: Peter Fankhauser
+
 1.3.3 (2016-05-10)
 ------------------
 * Release for ROS Kinetic.
