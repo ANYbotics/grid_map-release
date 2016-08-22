@@ -1,0 +1,12 @@
+Source: ros-kinetic-grid-map
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-grid-map
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-grid-map-core, ros-kinetic-grid-map-cv, ros-kinetic-grid-map-demos, ros-kinetic-grid-map-filters, ros-kinetic-grid-map-loader, ros-kinetic-grid-map-msgs, ros-kinetic-grid-map-ros, ros-kinetic-grid-map-rviz-plugin, ros-kinetic-grid-map-visualization
+Description: Meta-package for the universal grid map library.
