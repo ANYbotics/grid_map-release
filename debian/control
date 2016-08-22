@@ -1,0 +1,12 @@
+Source: ros-kinetic-grid-map-visualization
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-grid-map-core, ros-kinetic-grid-map-msgs, ros-kinetic-grid-map-ros, ros-kinetic-nav-msgs, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-grid-map-visualization
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-grid-map-core, ros-kinetic-grid-map-msgs, ros-kinetic-grid-map-ros, ros-kinetic-nav-msgs, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Description: Configurable tool to visualize grid maps in RViz.
