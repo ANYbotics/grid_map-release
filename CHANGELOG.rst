@@ -2,6 +2,14 @@
 Changelog for package grid_map_core
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.1 (2016-10-23)
+------------------
+* Improved line iterator with start and end positions.
+* Added method to retrieve submap size for iterators.
+* Improved transformation of images to color grid map layers.
+* Fixing issues with order of include with Eigen (`#67 <https://github.com/ethz-asl/grid_map/issues/67>`_).
+* Contributors: Peter Fankhauser, Dominic Jud
+
 1.4.0 (2016-08-22)
 ------------------
 * Added convenience function to convert a grid map to form with circular buffer at (0,0).
