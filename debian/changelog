@@ -1,0 +1,18 @@
+ros-jade-grid-map-rviz-plugin (1.4.1-0utopic) utopic; urgency=high
+
+  * Added functionality to display color from grid map layer.
+  * Added better handling of basic layers in Grid Map RViz plugin.
+  * Added functionality to invert rainbow colors in RViz plugin.
+  * Contributors: Philipp Kruesi, Péter Fankhauser
+
+ -- Philipp Krüsi <kruesip@ethz.ch>  Sat, 22 Oct 2016 22:00:00 -0000
+
+ros-jade-grid-map-rviz-plugin (1.4.0-0utopic) utopic; urgency=high
+
+  * Added new package grid_map_rviz_plugin to visualize grid map layers as 3d surfaces.
+  * Updated documentation.
+  * Contributors: Péter Fankhauser, Philipp Kruesi
+
+ -- Philipp Krüsi <kruesip@ethz.ch>  Sun, 21 Aug 2016 22:00:00 -0000
+
+
