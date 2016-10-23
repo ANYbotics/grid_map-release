@@ -2,6 +2,11 @@
 Changelog for package grid_map
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.1 (2016-10-23)
+------------------
+* Added new grid_map_pcl package.
+* Contributors: Peter Fankhauser, Dominic Jud
+
 1.4.0 (2016-08-22)
 ------------------
 * Added new package grid_map_rviz_plugin.
