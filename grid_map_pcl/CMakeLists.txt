@@ -1,23 +1,13 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(grid_map_core)
+project(grid_map_pcl)
 
 set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 
 ## Find catkin macros and libraries
-find_package(catkin REQUIRED COMPONENTS)
-
-## Define Eigen addons. 
-include(cmake/${PROJECT_NAME}-extras.cmake)
-
-## System dependencies are found with CMake's conventions
-#find_package(Eigen3 REQUIRED)
-# Solution to find Eigen3 with Saucy.
-find_package(Eigen3 QUIET)
-if(NOT EIGEN3_FOUND)
-  find_package(PkgConfig REQUIRED)
-  pkg_check_modules(EIGEN3 REQUIRED eigen3)
-  set(EIGEN3_INCLUDE_DIR ${EIGEN3_INCLUDE_DIRS})
-endif()
+find_package(catkin REQUIRED COMPONENTS
+  grid_map_core
+  pcl_ros
+)
 
 ###################################
 ## catkin specific configuration ##
@@ -31,14 +21,12 @@ endif()
 catkin_package(
   INCLUDE_DIRS
     include
-    ${EIGEN3_INCLUDE_DIR}
   LIBRARIES
     ${PROJECT_NAME}
   CATKIN_DEPENDS
+    grid_map_core
+    pcl_ros
   DEPENDS
-    #Eigen3
-  CFG_EXTRAS
-    ${PROJECT_NAME}-extras.cmake
 )
 
 ###########
@@ -54,22 +42,15 @@ include_directories(
 
 ## Declare a cpp library
 add_library(${PROJECT_NAME}
-   src/GridMap.cpp
-   src/GridMapMath.cpp
-   src/SubmapGeometry.cpp
-   src/BufferRegion.cpp
-   src/Polygon.cpp
-   src/iterators/GridMapIterator.cpp
-   src/iterators/SubmapIterator.cpp
-   src/iterators/CircleIterator.cpp
-   src/iterators/EllipseIterator.cpp
-   src/iterators/SpiralIterator.cpp
-   src/iterators/PolygonIterator.cpp
-   src/iterators/LineIterator.cpp
+  src/GridMapPclConverter.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}
   ${catkin_LIBRARIES}
+)
+
+add_dependencies(${PROJECT_NAME}
+  ${catkin_EXPORTED_TARGETS}
 )
 
 #############
@@ -91,32 +72,17 @@ install(
   FILES_MATCHING PATTERN "*.hpp"
 )
 
-# Mark other files for installation
-install(
-  DIRECTORY doc
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-
 #############
 ## Testing ##
 #############
 
-if(CATKIN_ENABLE_TESTING)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+#if(CATKIN_ENABLE_TESTING)
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 ## Add gtest based cpp test target and link libraries
-catkin_add_gtest(${PROJECT_NAME}-test
-  test/test_grid_map_core.cpp
-  test/GridMapMathTest.cpp
-  test/GridMapTest.cpp
-  test/GridMapIteratorTest.cpp
-  test/LineIteratorTest.cpp
-  test/EllipseIteratorTest.cpp
-  test/SubmapIteratorTest.cpp
-  test/PolygonIteratorTest.cpp
-  test/PolygonTest.cpp
-  test/EigenPluginsTest.cpp)
-endif()
+#catkin_add_gtest(${PROJECT_NAME}-test test/test_grid_map_pcl.cpp test/GridMapPclTest.cpp)
+#endif()
 
-if(TARGET ${PROJECT_NAME}-test)
-  target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
-endif()
+#if(TARGET ${PROJECT_NAME}-test)
+#  target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
+#endif()
+
