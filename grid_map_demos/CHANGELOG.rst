@@ -2,6 +2,9 @@
 Changelog for package grid_map_demos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.1 (2016-10-23)
+------------------
+
 1.4.0 (2016-08-22)
 ------------------
 * Added Grid Map RViz plugin to RViz configuration.
