@@ -1,9 +1,0 @@
-ros-jade-grid-map-rviz-plugin (1.4.0-0trusty) trusty; urgency=high
-
-  * Added new package grid_map_rviz_plugin to visualize grid map layers as 3d surfaces.
-  * Updated documentation.
-  * Contributors: Péter Fankhauser, Philipp Kruesi
-
- -- Philipp Krüsi <kruesip@ethz.ch>  Sun, 21 Aug 2016 22:00:00 -0000
-
-
