@@ -1,0 +1,8 @@
+ros-indigo-grid-map-pcl (1.4.1-0saucy) saucy; urgency=high
+
+  * Added new grid_map_pcl package to convert from PCL mesh to grid map.
+  * Contributors: Dominic Jud
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Sat, 22 Oct 2016 22:00:00 -0000
+
+
