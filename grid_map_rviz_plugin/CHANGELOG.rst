@@ -2,6 +2,11 @@
 Changelog for package grid_map_rviz_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.2 (2017-01-24)
+------------------
+* Cleanup thanks to message traits.
+* Contributors: Peter Fankhauser
+
 1.4.1 (2016-10-23)
 ------------------
 * Added functionality to display color from grid map layer.
