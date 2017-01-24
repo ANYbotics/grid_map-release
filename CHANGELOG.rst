@@ -2,6 +2,11 @@
 Changelog for package grid_map_cv
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.2 (2017-01-24)
+------------------
+* Fixed conversion to/from images in float&double format.
+* Contributors: Peter Fankhauser
+
 1.4.1 (2016-10-23)
 ------------------
 * Improved transformation of images to color grid map layers.
