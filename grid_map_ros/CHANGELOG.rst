@@ -2,6 +2,12 @@
 Changelog for package grid_map_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.2 (2017-01-24)
+------------------
+* Added conversion for Costmap2D from ROS Navigation (`#84 <https://github.com/ethz-asl/grid_map/issues/84>`_).
+* Added Grid Map message traits to simplify code of the Grid Map RViz plugin (`#87 <https://github.com/ethz-asl/grid_map/issues/87>`_).
+* Contributors: Peter Fankhauser, Stefan Kohlbrecher, Daniel Stonier
+
 1.4.1 (2016-10-23)
 ------------------
 * Improved transformation of images to color grid map layers.
