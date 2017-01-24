@@ -1,3 +1,37 @@
+## grid_map (jade) - 1.4.2-0
+
+The packages in the `grid_map` repository were released into the `jade` distro by running `/usr/bin/bloom-release grid_map --track jade --rosdistro jade` on `Tue, 24 Jan 2017 16:16:43 -0000`
+
+These packages were released:
+- `grid_map`
+- `grid_map_core`
+- `grid_map_cv`
+- `grid_map_demos`
+- `grid_map_filters`
+- `grid_map_loader`
+- `grid_map_msgs`
+- `grid_map_pcl`
+- `grid_map_ros`
+- `grid_map_rviz_plugin`
+- `grid_map_visualization`
+
+Version of package(s) in repository `grid_map`:
+
+- upstream repository: https://github.com/ethz-asl/grid_map.git
+- release repository: https://github.com/ethz-asl/grid_map-release.git
+- rosdistro version: `1.4.1-0`
+- old version: `1.4.1-0`
+- new version: `1.4.2-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.23`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## grid_map (indigo) - 1.4.2-0
 
 The packages in the `grid_map` repository were released into the `indigo` distro by running `/usr/bin/bloom-release grid_map --track indigo --rosdistro indigo` on `Tue, 24 Jan 2017 16:07:56 -0000`
