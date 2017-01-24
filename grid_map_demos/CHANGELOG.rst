@@ -2,6 +2,11 @@
 Changelog for package grid_map_demos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.2 (2017-01-24)
+------------------
+* Addressing C++ compiler warnings.
+* Contributors: Peter Fankhauser
+
 1.4.1 (2016-10-23)
 ------------------
 
