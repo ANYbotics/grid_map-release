@@ -2,6 +2,13 @@
 Changelog for package grid_map_core
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.2 (2017-01-24)
+------------------
+* Added linear interpolation method for data access.
+* Increased efficiency for linear interpolation method.
+* Addressing C++ compiler warnings.
+* Contributors: Dominic Jud, Peter Fankhauser, Horatiu George Todoran
+
 1.4.1 (2016-10-23)
 ------------------
 * Improved line iterator with start and end positions.
