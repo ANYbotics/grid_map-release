@@ -2,6 +2,13 @@
 Changelog for package grid_map_demos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.0 (2017-07-18)
+------------------
+* Added demo for octomap to grid map conversion.
+* Updated installation for demos.
+* General performance improvements, cleanups, and reformatting.
+* Contributors: Jeff Delmerico, Peter Fankhauser
+
 1.4.2 (2017-01-24)
 ------------------
 * Addressing C++ compiler warnings.
