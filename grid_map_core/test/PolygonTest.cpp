@@ -19,7 +19,7 @@ using namespace std;
 using namespace Eigen;
 using namespace grid_map;
 
-TEST(checkGetCentroid, triangle)
+TEST(Polygon, getCentroidTriangle)
 {
   grid_map::Polygon triangle;
   triangle.addVertex(Vector2d(0.0, 0.0));
@@ -34,7 +34,7 @@ TEST(checkGetCentroid, triangle)
   EXPECT_DOUBLE_EQ(expectedCentroid.y(), centroid.y());
 }
 
-TEST(checkGetCentroid, rectangle)
+TEST(Polygon, getCentroidRectangle)
 {
   grid_map::Polygon rectangle;
   rectangle.addVertex(Vector2d(-2.0, -1.0));
@@ -48,7 +48,7 @@ TEST(checkGetCentroid, rectangle)
   EXPECT_DOUBLE_EQ(expectedCentroid.y(), centroid.y());
 }
 
-TEST(checkConvexHull, createHull)
+TEST(Polygon, convexHullPolygon)
 {
   grid_map::Polygon polygon1;
   polygon1.addVertex(Vector2d(0.0, 0.0));
@@ -69,7 +69,7 @@ TEST(checkConvexHull, createHull)
   EXPECT_FALSE(hull.isInside(Vector2d(0.01, 1.49)));
 }
 
-TEST(checkConvexHullCircles, createHull)
+TEST(Polygon, convexHullCircles)
 {
   Position center1(0.0, 0.0);
   Position center2(1.0, 0.0);
@@ -91,9 +91,33 @@ TEST(checkConvexHullCircles, createHull)
   EXPECT_TRUE(hull.isInside(Vector2d(0.5, 0.4)));
   EXPECT_FALSE(hull.isInside(Vector2d(0.5, 0.6)));
   EXPECT_FALSE(hull.isInside(Vector2d(1.5, 0.2)));
+
+  hull = grid_map::Polygon::convexHullOfTwoCircles(center1, center1, radius);
+  EXPECT_EQ(20, hull.nVertices());
+  EXPECT_TRUE(hull.isInside(Vector2d(-0.25, 0.0)));
+  EXPECT_TRUE(hull.isInside(Vector2d(0.25, 0.0)));
+  EXPECT_TRUE(hull.isInside(Vector2d(0.0, 0.25)));
+  EXPECT_TRUE(hull.isInside(Vector2d(0.0, -0.25)));
+  EXPECT_FALSE(hull.isInside(Vector2d(0.5, 0.5)));
+  EXPECT_FALSE(hull.isInside(Vector2d(0.6, 0.0)));
+  EXPECT_FALSE(hull.isInside(Vector2d(-0.6, 0.0)));
+  EXPECT_FALSE(hull.isInside(Vector2d(0.0, 0.6)));
+  EXPECT_FALSE(hull.isInside(Vector2d(0.0, -0.6)));
+
+  hull = grid_map::Polygon::convexHullOfTwoCircles(center1, center1, radius, nVertices);
+  EXPECT_EQ(nVertices, hull.nVertices());
+  EXPECT_TRUE(hull.isInside(Vector2d(-0.25, 0.0)));
+  EXPECT_TRUE(hull.isInside(Vector2d(0.25, 0.0)));
+  EXPECT_TRUE(hull.isInside(Vector2d(0.0, 0.25)));
+  EXPECT_TRUE(hull.isInside(Vector2d(0.0, -0.25)));
+  EXPECT_FALSE(hull.isInside(Vector2d(0.5, 0.5)));
+  EXPECT_FALSE(hull.isInside(Vector2d(0.6, 0.0)));
+  EXPECT_FALSE(hull.isInside(Vector2d(-0.6, 0.0)));
+  EXPECT_FALSE(hull.isInside(Vector2d(0.0, 0.6)));
+  EXPECT_FALSE(hull.isInside(Vector2d(0.0, -0.6)));
 }
 
-TEST(checkConvexHullCircle, createHull)
+TEST(Polygon, convexHullCircle)
 {
   Position center(0.0, 0.0);
   double radius = 0.5;
@@ -159,4 +183,31 @@ TEST(offsetInward, triangle)
   EXPECT_NEAR(0.0, polygon.getVertex(1)(1), 1e-4);
   EXPECT_NEAR(0.9, polygon.getVertex(2)(0), 1e-4);
   EXPECT_NEAR(-0.758579, polygon.getVertex(2)(1), 1e-4);
+}
+
+TEST(triangulation, triangle)
+{
+  grid_map::Polygon polygon({Position(1.0, 1.0), Position(0.0, 0.0), Position(1.0, -1.0)});
+  std::vector<grid_map::Polygon> polygons;
+  polygons = polygon.triangulate();
+  ASSERT_EQ(1, polygons.size());
+  EXPECT_EQ(polygon.getVertex(0).x(), polygons[0].getVertex(0).x());
+  EXPECT_EQ(polygon.getVertex(0).y(), polygons[0].getVertex(0).y());
+  EXPECT_EQ(polygon.getVertex(1).x(), polygons[0].getVertex(1).x());
+  EXPECT_EQ(polygon.getVertex(1).y(), polygons[0].getVertex(1).y());
+  EXPECT_EQ(polygon.getVertex(2).x(), polygons[0].getVertex(2).x());
+  EXPECT_EQ(polygon.getVertex(2).y(), polygons[0].getVertex(2).y());
+}
+
+TEST(triangulation, rectangle)
+{
+  grid_map::Polygon rectangle;
+  rectangle.addVertex(Vector2d(-2.0, -1.0));
+  rectangle.addVertex(Vector2d(-2.0, 2.0));
+  rectangle.addVertex(Vector2d(1.0, 2.0));
+  rectangle.addVertex(Vector2d(1.0, -1.0));
+  std::vector<grid_map::Polygon> polygons;
+  polygons = rectangle.triangulate();
+  ASSERT_EQ(2, polygons.size());
+  // TODO Extend.
 }
