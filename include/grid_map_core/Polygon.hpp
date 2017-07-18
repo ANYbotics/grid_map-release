@@ -22,6 +22,10 @@ class Polygon
 {
  public:
 
+  enum class TriangulationMethods {
+    FAN // Fan triangulation (only for convex polygons).
+  };
+
   /*!
    * Default constructor.
    */
@@ -148,6 +152,12 @@ class Polygon
   bool offsetInward(const double margin);
 
   /*!
+   * Return a triangulated version of the polygon.
+   * @return a list of triangle polygons covering the same polygon.
+   */
+  std::vector<Polygon> triangulate(const TriangulationMethods& method = TriangulationMethods::FAN) const;
+
+  /*!
    * Approximates a circle with a polygon.
    * @param[in] center the center position of the circle.
    * @param[in] radius radius of the circle.
@@ -204,6 +214,9 @@ class Polygon
 
   //! Vertices of the polygon.
   std::vector<Position> vertices_;
+
+ public:
+  EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 } /* namespace grid_map */
