@@ -1,0 +1,12 @@
+Source: ros-jade-grid-map-costmap-2d
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-costmap-2d, ros-jade-grid-map-core, ros-jade-tf
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-jade-grid-map-costmap-2d
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-costmap-2d, ros-jade-grid-map-core, ros-jade-tf
+Description: Interface for grid maps to the costmap_2d format.
