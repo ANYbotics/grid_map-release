@@ -15,7 +15,6 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   cv_bridge
   rosbag
-  costmap_2d
   tf
   visualization_msgs
 )
@@ -48,11 +47,9 @@ catkin_package(
     geometry_msgs
     cv_bridge
     rosbag
-    costmap_2d
     tf
     visualization_msgs
   DEPENDS
-    #Eigen3
 )
 
 ###########
@@ -111,9 +108,7 @@ catkin_add_gtest(
 	${PROJECT_NAME}-test
 	test/test_grid_map_ros.cpp
 	test/GridMapRosTest.cpp
-	test/Costmap2DConverterTest.cpp
 )
-add_subdirectory(rostest)
 endif()
 
 if(TARGET ${PROJECT_NAME}-test)
