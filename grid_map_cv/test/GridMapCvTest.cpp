@@ -6,9 +6,10 @@
  *	 Institute: ETH Zurich, Autonomous Systems Lab
  */
 
+#include "grid_map_cv/grid_map_cv.hpp"
+
 #include <grid_map_core/grid_map_core.hpp>
 #include <grid_map_core/gtest_eigen.hpp>
-#include "grid_map_cv/grid_map_cv.hpp"
 
 // gtest
 #include <gtest/gtest.h>
@@ -48,8 +49,9 @@ TEST(ImageConversion, roundTrip8UC4)
 {
   // Create grid map.
   GridMap mapIn({"layer"});
-  mapIn.setGeometry(grid_map::Length(2.0, 1.0), 0.01);
+  mapIn.setGeometry(grid_map::Length(2.0, 1.0), 0.1);
   mapIn["layer"].setRandom();
+  mapIn["layer"](1, 2) = NAN; // To check for transparnecy/nan handling.
   const float minValue = -1.0;
   const float maxValue = 1.0;
 
