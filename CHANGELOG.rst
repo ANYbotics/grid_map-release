@@ -2,6 +2,11 @@
 Changelog for package grid_map_pcl
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.0 (2017-07-18)
+------------------
+* Improved efficiency of mesh conversion.
+* Contributors: Alex Millane
+
 1.4.2 (2017-01-24)
 ------------------
 * Addressing C++ compiler warnings.
