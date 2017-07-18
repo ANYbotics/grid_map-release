@@ -2,6 +2,12 @@
 Changelog for package grid_map_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.0 (2017-07-18)
+------------------
+* Added new ROS converter for polygon to triangle lists.
+* Move costmap_2d conversion into separate package.
+* Contributors: Peter Fankhauser
+
 1.4.2 (2017-01-24)
 ------------------
 * Added conversion for Costmap2D from ROS Navigation (`#84 <https://github.com/ethz-asl/grid_map/issues/84>`_).
