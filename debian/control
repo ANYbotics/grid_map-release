@@ -1,0 +1,12 @@
+Source: ros-indigo-grid-map-costmap-2d
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-costmap-2d, ros-indigo-grid-map-core, ros-indigo-tf
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-indigo-grid-map-costmap-2d
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-costmap-2d, ros-indigo-grid-map-core, ros-indigo-tf
+Description: Interface for grid maps to the costmap_2d format.
