@@ -1,0 +1,20 @@
+ros-kinetic-grid-map-octomap (1.5.2-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 24 Jul 2017 22:00:00 -0000
+
+ros-kinetic-grid-map-octomap (1.5.1-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 24 Jul 2017 22:00:00 -0000
+
+ros-kinetic-grid-map-octomap (1.5.0-0xenial) xenial; urgency=high
+
+  * Added new package for octomap to grid map conversion.
+  * Contributors: Jeff Delmerico, Peter Fankhauser
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 17 Jul 2017 22:00:00 -0000
+
+
