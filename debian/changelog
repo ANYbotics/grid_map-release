@@ -1,0 +1,100 @@
+ros-kinetic-grid-map-filters (1.5.2-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 24 Jul 2017 22:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.5.1-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 24 Jul 2017 22:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.5.0-0xenial) xenial; urgency=high
+
+  * Smaller cleanups for consistency.
+  * Contributors: Peter Fankhauser
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 17 Jul 2017 22:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.4.2-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 23 Jan 2017 23:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.4.1-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Sat, 22 Oct 2016 22:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.4.0-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Sun, 21 Aug 2016 22:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.3.3-0xenial) xenial; urgency=high
+
+  * Release for ROS Kinetic.
+  * Contributors: Peter Fankhauser
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 09 May 2016 22:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.3.2-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 09 May 2016 22:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.3.1-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 09 May 2016 22:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.3.0-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Mon, 25 Apr 2016 22:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.2.0-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Wed, 02 Mar 2016 23:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.1.3-0xenial) xenial; urgency=high
+
+
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Sun, 10 Jan 2016 23:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.1.2-0xenial) xenial; urgency=high
+
+  * Should fix errors on build server regarding Eigen3 and visualization_msgs dependencies.
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Sun, 10 Jan 2016 23:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.1.1-0xenial) xenial; urgency=high
+
+  * Changes to CMakeLists.txt to enable compatibility with Ubuntu Saucy.
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Sun, 10 Jan 2016 23:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.1.0-0xenial) xenial; urgency=high
+
+  * added installation instructions in CMakeLists
+  * general improvements and bugfixes
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Thu, 07 Jan 2016 23:00:00 -0000
+
+ros-kinetic-grid-map-filters (1.0.0-0xenial) xenial; urgency=high
+
+  * release for Springer ROS Book Chapter
+
+ -- Péter Fankhauser <pfankhauser@ethz.ch>  Thu, 19 Nov 2015 23:00:00 -0000
+
+
