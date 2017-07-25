@@ -1,0 +1,12 @@
+Source: ros-jade-grid-map-octomap
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-grid-map-core, ros-jade-octomap
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-jade-grid-map-octomap
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-grid-map-core, ros-jade-octomap
+Description: Conversions between grid maps and OctoMap types.
