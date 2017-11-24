@@ -1,0 +1,12 @@
+Source: ros-lunar-grid-map-costmap-2d
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-costmap-2d, ros-lunar-grid-map-core, ros-lunar-tf
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-lunar-grid-map-costmap-2d
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-costmap-2d, ros-lunar-grid-map-core, ros-lunar-tf
+Description: Interface for grid maps to the costmap_2d format.
