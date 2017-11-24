@@ -1,0 +1,12 @@
+Source: ros-lunar-grid-map-demos
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-cv-bridge, ros-lunar-geometry-msgs, ros-lunar-grid-map-core, ros-lunar-grid-map-cv, ros-lunar-grid-map-filters, ros-lunar-grid-map-loader, ros-lunar-grid-map-msgs, ros-lunar-grid-map-octomap, ros-lunar-grid-map-ros, ros-lunar-grid-map-rviz-plugin, ros-lunar-grid-map-visualization, ros-lunar-octomap-msgs, ros-lunar-roscpp, ros-lunar-sensor-msgs
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-lunar-grid-map-demos
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-cv-bridge, ros-lunar-geometry-msgs, ros-lunar-grid-map-core, ros-lunar-grid-map-cv, ros-lunar-grid-map-filters, ros-lunar-grid-map-loader, ros-lunar-grid-map-msgs, ros-lunar-grid-map-octomap, ros-lunar-grid-map-ros, ros-lunar-grid-map-rviz-plugin, ros-lunar-grid-map-visualization, ros-lunar-octomap-msgs, ros-lunar-roscpp, ros-lunar-sensor-msgs
+Description: Demo nodes to demonstrate the usage of the grid map library.
