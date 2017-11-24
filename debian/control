@@ -1,0 +1,12 @@
+Source: ros-kinetic-grid-map-demos
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-cv-bridge, ros-kinetic-geometry-msgs, ros-kinetic-grid-map-core, ros-kinetic-grid-map-cv, ros-kinetic-grid-map-filters, ros-kinetic-grid-map-loader, ros-kinetic-grid-map-msgs, ros-kinetic-grid-map-octomap, ros-kinetic-grid-map-ros, ros-kinetic-grid-map-rviz-plugin, ros-kinetic-grid-map-visualization, ros-kinetic-octomap-msgs, ros-kinetic-roscpp, ros-kinetic-sensor-msgs
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-grid-map-demos
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-cv-bridge, ros-kinetic-geometry-msgs, ros-kinetic-grid-map-core, ros-kinetic-grid-map-cv, ros-kinetic-grid-map-filters, ros-kinetic-grid-map-loader, ros-kinetic-grid-map-msgs, ros-kinetic-grid-map-octomap, ros-kinetic-grid-map-ros, ros-kinetic-grid-map-rviz-plugin, ros-kinetic-grid-map-visualization, ros-kinetic-octomap-msgs, ros-kinetic-roscpp, ros-kinetic-sensor-msgs
+Description: Demo nodes to demonstrate the usage of the grid map library.
