@@ -1,0 +1,12 @@
+Source: ros-lunar-grid-map-loader
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-grid-map-msgs, ros-lunar-grid-map-ros, ros-lunar-roscpp
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-lunar-grid-map-loader
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-grid-map-msgs, ros-lunar-grid-map-ros, ros-lunar-roscpp
+Description: Loading and publishing grid maps from bag files.
