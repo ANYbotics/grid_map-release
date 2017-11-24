@@ -1,0 +1,12 @@
+Source: ros-lunar-grid-map
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-lunar-grid-map
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-grid-map-core, ros-lunar-grid-map-cv, ros-lunar-grid-map-demos, ros-lunar-grid-map-filters, ros-lunar-grid-map-loader, ros-lunar-grid-map-msgs, ros-lunar-grid-map-ros, ros-lunar-grid-map-rviz-plugin, ros-lunar-grid-map-visualization
+Description: Meta-package for the universal grid map library.
