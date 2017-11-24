@@ -1,0 +1,12 @@
+Source: ros-indigo-grid-map-rviz-plugin
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), qtbase5-dev, ros-indigo-catkin, ros-indigo-grid-map-msgs, ros-indigo-grid-map-ros, ros-indigo-rviz
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-grid-map-rviz-plugin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5core5a, libqt5gui5, libqt5widgets5, ros-indigo-grid-map-msgs, ros-indigo-grid-map-ros, ros-indigo-rviz
+Description: RViz plugin for displaying grid map messages.
