@@ -8,9 +8,10 @@
 
 #include <grid_map_core/Polygon.hpp>
 
-// Eigen
 #include <Eigen/Core>
 #include <Eigen/Geometry>
+
+#include <limits>
 
 namespace grid_map {
 
@@ -125,6 +126,24 @@ Position Polygon::getCentroid() const
   return centroid;
 }
 
+void Polygon::getBoundingBox(Position& center, Length& length) const
+{
+  double minX = std::numeric_limits<double>::infinity();
+  double maxX = -std::numeric_limits<double>::infinity();
+  double minY = std::numeric_limits<double>::infinity();
+  double maxY = -std::numeric_limits<double>::infinity();
+  for (const auto& vertex : vertices_) {
+    if (vertex.x() > maxX) maxX = vertex.x();
+    if (vertex.y() > maxY) maxY = vertex.y();
+    if (vertex.x() < minX) minX = vertex.x();
+    if (vertex.y() < minY) minY = vertex.y();
+  }
+  center.x() = (minX + maxX) / 2.0;
+  center.y() = (minY + maxY) / 2.0;
+  length.x() = (maxX - minX);
+  length.y() = (maxY - minY);
+}
+
 bool Polygon::convertToInequalityConstraints(Eigen::MatrixXd& A, Eigen::VectorXd& b) const
 {
   Eigen::MatrixXd V(nVertices(), 2);
@@ -161,6 +180,21 @@ bool Polygon::convertToInequalityConstraints(Eigen::MatrixXd& A, Eigen::VectorXd
   return true;
 }
 
+bool Polygon::thickenLine(const double thickness)
+{
+  if (vertices_.size() != 2) return false;
+  const Vector connection(vertices_[1] - vertices_[0]);
+  const Vector orthogonal = thickness * Vector(connection.y(), -connection.x()).normalized();
+  std::vector<Position> newVertices;
+  newVertices.reserve(4);
+  newVertices.push_back(vertices_[0] + orthogonal);
+  newVertices.push_back(vertices_[0] - orthogonal);
+  newVertices.push_back(vertices_[1] - orthogonal);
+  newVertices.push_back(vertices_[1] + orthogonal);
+  vertices_ = newVertices;
+  return true;
+}
+
 bool Polygon::offsetInward(const double margin)
 {
   // Create a list of indices of the neighbours of each vertex.
@@ -189,8 +223,11 @@ std::vector<Polygon> Polygon::triangulate(const TriangulationMethods& method) co
 {
   // TODO Add more triangulation methods.
   // https://en.wikipedia.org/wiki/Polygon_triangulation
-  size_t nPolygons = vertices_.size() - 2;
   std::vector<Polygon> polygons;
+  if (vertices_.size() < 3)
+    return polygons;
+
+  size_t nPolygons = vertices_.size() - 2;
   polygons.reserve(nPolygons);
 
   if (nPolygons < 1) {
