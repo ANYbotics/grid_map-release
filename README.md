@@ -1,3 +1,40 @@
+## grid_map (kinetic) - 1.6.0-0
+
+The packages in the `grid_map` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release grid_map --track kinetic --rosdistro kinetic` on `Fri, 24 Nov 2017 10:16:30 -0000`
+
+These packages were released:
+- `grid_map`
+- `grid_map_core`
+- `grid_map_costmap_2d`
+- `grid_map_cv`
+- `grid_map_demos`
+- `grid_map_filters`
+- `grid_map_loader`
+- `grid_map_msgs`
+- `grid_map_octomap`
+- `grid_map_pcl`
+- `grid_map_ros`
+- `grid_map_rviz_plugin`
+- `grid_map_sdf`
+- `grid_map_visualization`
+
+Version of package(s) in repository `grid_map`:
+
+- upstream repository: https://github.com/ethz-asl/grid_map.git
+- release repository: https://github.com/ethz-asl/grid_map-release.git
+- rosdistro version: `1.5.2-0`
+- old version: `1.5.2-0`
+- new version: `1.6.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.1`
+- catkin_pkg version: `0.3.8`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## grid_map (indigo) - 1.6.0-0
 
 The packages in the `grid_map` repository were released into the `indigo` distro by running `/usr/bin/bloom-release grid_map --track indigo --rosdistro indigo` on `Fri, 24 Nov 2017 10:05:04 -0000`
