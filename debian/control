@@ -1,0 +1,12 @@
+Source: ros-lunar-grid-map-filters
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@ethz.ch>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-filters, ros-lunar-grid-map-core, ros-lunar-grid-map-msgs, ros-lunar-grid-map-ros
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-lunar-grid-map-filters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-filters, ros-lunar-grid-map-core, ros-lunar-grid-map-msgs, ros-lunar-grid-map-ros
+Description: Processing grid maps as a sequence of ROS filters.
