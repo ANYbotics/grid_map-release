@@ -1,0 +1,12 @@
+Source: ros-melodic-grid-map-pcl
+Section: misc
+Priority: extra
+Maintainer: Péter Fankhauser <pfankhauser@anybotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-grid-map-core, ros-melodic-pcl-ros
+Homepage: http://github.com/ethz-asl/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-melodic-grid-map-pcl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-grid-map-core, ros-melodic-pcl-ros
+Description: Conversions between grid maps and Point Cloud Library (PCL) types.
