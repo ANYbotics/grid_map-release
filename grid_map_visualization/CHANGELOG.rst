@@ -2,6 +2,9 @@
 Changelog for package grid_map_visualization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.6.2 (2019-10-14)
+------------------
+
 1.6.1 (2019-02-27)
 ------------------
 * Updated host changes.
@@ -47,7 +50,7 @@ Changelog for package grid_map_visualization
 
 1.2.0 (2016-03-03)
 ------------------
-* Changed the package name from `grid_map` to `grid_map_ros` and made `grid_map` a metapackage (`#34 <https://github.com/ethz-asl/grid_map/issues/34>`_).
+* Changed the package name from `grid_map` to `grid_map_ros` and made `grid_map` a metapackage (`#34 <https://github.com/anybotics/grid_map/issues/34>`_).
 * Contributors: Peter Fankhauser
 
 1.1.3 (2016-01-11)
