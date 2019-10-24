@@ -1,0 +1,12 @@
+Source: ros-melodic-grid-map-costmap-2d
+Section: misc
+Priority: optional
+Maintainer: Péter Fankhauser <pfankhauser@anybotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-costmap-2d, ros-melodic-grid-map-core, ros-melodic-tf
+Homepage: http://github.com/anybotics/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-melodic-grid-map-costmap-2d
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-costmap-2d, ros-melodic-grid-map-core, ros-melodic-tf
+Description: Interface for grid maps to the costmap_2d format.
