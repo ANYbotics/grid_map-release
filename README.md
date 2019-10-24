@@ -1,3 +1,40 @@
+## grid_map (kinetic) - 1.6.2-1
+
+The packages in the `grid_map` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release grid_map --rosdistro kinetic` on `Thu, 24 Oct 2019 09:09:15 -0000`
+
+These packages were released:
+- `grid_map`
+- `grid_map_core`
+- `grid_map_costmap_2d`
+- `grid_map_cv`
+- `grid_map_demos`
+- `grid_map_filters`
+- `grid_map_loader`
+- `grid_map_msgs`
+- `grid_map_octomap`
+- `grid_map_pcl`
+- `grid_map_ros`
+- `grid_map_rviz_plugin`
+- `grid_map_sdf`
+- `grid_map_visualization`
+
+Version of package(s) in repository `grid_map`:
+
+- upstream repository: https://github.com/ethz-asl/grid_map.git
+- release repository: https://github.com/anybotics/grid_map-release.git
+- rosdistro version: `1.6.1-0`
+- old version: `1.6.1-0`
+- new version: `1.6.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.0`
+- catkin_pkg version: `0.4.14`
+- rosdep version: `0.17.1`
+- rosdistro version: `0.7.5`
+- vcstools version: `0.1.42`
+
+
 ## grid_map (melodic) - 1.6.2-1
 
 The packages in the `grid_map` repository were released into the `melodic` distro by running `/usr/bin/bloom-release grid_map --rosdistro melodic` on `Thu, 24 Oct 2019 08:58:45 -0000`
