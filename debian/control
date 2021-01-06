@@ -1,0 +1,12 @@
+Source: ros-noetic-grid-map-cv
+Section: misc
+Priority: optional
+Maintainer: Maximilian Wulf <mwulf@anybotics.com>
+Build-Depends: debhelper (>= 9.0.0), libgtest-dev, ros-noetic-catkin, ros-noetic-cv-bridge, ros-noetic-filters, ros-noetic-grid-map-core
+Homepage: http://github.com/anybotics/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-noetic-grid-map-cv
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-cv-bridge, ros-noetic-filters, ros-noetic-grid-map-core
+Description: Conversions between grid maps and OpenCV images.
