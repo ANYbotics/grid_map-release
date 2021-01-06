@@ -1,3 +1,40 @@
+## grid_map (noetic) - 1.6.4-1
+
+The packages in the `grid_map` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --rosdistro noetic --track noetic grid_map` on `Wed, 06 Jan 2021 11:52:39 -0000`
+
+These packages were released:
+- `grid_map`
+- `grid_map_core`
+- `grid_map_costmap_2d`
+- `grid_map_cv`
+- `grid_map_demos`
+- `grid_map_filters`
+- `grid_map_loader`
+- `grid_map_msgs`
+- `grid_map_octomap`
+- `grid_map_pcl`
+- `grid_map_ros`
+- `grid_map_rviz_plugin`
+- `grid_map_sdf`
+- `grid_map_visualization`
+
+Version of package(s) in repository `grid_map`:
+
+- upstream repository: https://github.com/anybotics/grid_map.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.6.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.0`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## grid_map (melodic) - 1.6.4-2
 
 The packages in the `grid_map` repository were released into the `melodic` distro by running `/usr/bin/bloom-release grid_map --rosdistro melodic` on `Wed, 06 Jan 2021 11:37:28 -0000`
