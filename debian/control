@@ -1,0 +1,12 @@
+Source: ros-noetic-grid-map-pcl
+Section: misc
+Priority: optional
+Maintainer: Maximilian Wulf <mwulf@anybotics.com>
+Build-Depends: debhelper (>= 9.0.0), libgtest-dev, libpcl-dev, libyaml-cpp-dev, ros-noetic-catkin, ros-noetic-grid-map-core, ros-noetic-grid-map-msgs, ros-noetic-grid-map-ros, ros-noetic-pcl-ros, ros-noetic-roscpp
+Homepage: http://github.com/anybotics/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-noetic-grid-map-pcl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpcl-dev, libyaml-cpp-dev, ros-noetic-grid-map-core, ros-noetic-grid-map-msgs, ros-noetic-grid-map-ros, ros-noetic-pcl-ros, ros-noetic-roscpp
+Description: Conversions between grid maps and Point Cloud Library (PCL) types.
