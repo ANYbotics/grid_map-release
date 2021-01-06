@@ -1,0 +1,12 @@
+Source: ros-noetic-grid-map-filters
+Section: misc
+Priority: optional
+Maintainer: Maximilian Wulf <mwulf@anybotics.com>
+Build-Depends: debhelper (>= 9.0.0), google-mock, libgtest-dev, libopencv-dev, libtbb-dev, ros-noetic-catkin, ros-noetic-filters, ros-noetic-grid-map-core, ros-noetic-grid-map-msgs, ros-noetic-grid-map-ros
+Homepage: http://github.com/anybotics/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-noetic-grid-map-filters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libopencv-dev, libtbb-dev, ros-noetic-filters, ros-noetic-grid-map-core, ros-noetic-grid-map-msgs, ros-noetic-grid-map-ros
+Description: Processing grid maps as a sequence of ROS filters.
