@@ -1,0 +1,45 @@
+ros-noetic-grid-map-octomap (1.6.4-1buster) buster; urgency=high
+
+
+
+ -- Maximilian Wulf <mwulf@anybotics.com>  Thu, 03 Dec 2020 23:00:00 -0000
+
+ros-noetic-grid-map-octomap (1.6.2-1buster) buster; urgency=high
+
+
+
+ -- Maximilian Wulf <mwulf@anybotics.com>  Sun, 13 Oct 2019 22:00:00 -0000
+
+ros-noetic-grid-map-octomap (1.6.1-1buster) buster; urgency=high
+
+  * Updated author e-mail address.
+  * Contributors: Peter Fankhauser
+
+ -- Maximilian Wulf <mwulf@anybotics.com>  Tue, 26 Feb 2019 23:00:00 -0000
+
+ros-noetic-grid-map-octomap (1.6.0-1buster) buster; urgency=high
+
+
+
+ -- Maximilian Wulf <mwulf@anybotics.com>  Thu, 23 Nov 2017 23:00:00 -0000
+
+ros-noetic-grid-map-octomap (1.5.2-1buster) buster; urgency=high
+
+
+
+ -- Maximilian Wulf <mwulf@anybotics.com>  Mon, 24 Jul 2017 22:00:00 -0000
+
+ros-noetic-grid-map-octomap (1.5.1-1buster) buster; urgency=high
+
+
+
+ -- Maximilian Wulf <mwulf@anybotics.com>  Mon, 24 Jul 2017 22:00:00 -0000
+
+ros-noetic-grid-map-octomap (1.5.0-1buster) buster; urgency=high
+
+  * Added new package for octomap to grid map conversion.
+  * Contributors: Jeff Delmerico, Peter Fankhauser
+
+ -- Maximilian Wulf <mwulf@anybotics.com>  Mon, 17 Jul 2017 22:00:00 -0000
+
+

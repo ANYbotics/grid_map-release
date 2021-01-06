@@ -1,0 +1,12 @@
+Source: ros-noetic-grid-map-octomap
+Section: misc
+Priority: optional
+Maintainer: Maximilian Wulf <mwulf@anybotics.com>
+Build-Depends: debhelper (>= 9.0.0), libgtest-dev, ros-noetic-catkin, ros-noetic-grid-map-core, ros-noetic-octomap
+Homepage: http://github.com/anybotics/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-noetic-grid-map-octomap
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-grid-map-core, ros-noetic-octomap
+Description: Conversions between grid maps and OctoMap types.
