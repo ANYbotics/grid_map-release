@@ -1,0 +1,12 @@
+Source: ros-noetic-grid-map-costmap-2d
+Section: misc
+Priority: optional
+Maintainer: Maximilian Wulf <mwulf@anybotics.com>
+Build-Depends: debhelper (>= 9.0.0), libgtest-dev, ros-noetic-catkin, ros-noetic-costmap-2d, ros-noetic-grid-map-core, ros-noetic-tf
+Homepage: http://github.com/anybotics/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-noetic-grid-map-costmap-2d
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-costmap-2d, ros-noetic-grid-map-core, ros-noetic-tf
+Description: Interface for grid maps to the costmap_2d format.
