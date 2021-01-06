@@ -1,0 +1,12 @@
+Source: ros-melodic-grid-map-demos
+Section: misc
+Priority: optional
+Maintainer: Maximilian Wulf <mwulf@anybotics.com>
+Build-Depends: debhelper (>= 9.0.0), libgtest-dev, ros-melodic-catkin, ros-melodic-cv-bridge, ros-melodic-geometry-msgs, ros-melodic-grid-map-core, ros-melodic-grid-map-cv, ros-melodic-grid-map-filters, ros-melodic-grid-map-loader, ros-melodic-grid-map-msgs, ros-melodic-grid-map-octomap, ros-melodic-grid-map-ros, ros-melodic-grid-map-rviz-plugin, ros-melodic-grid-map-visualization, ros-melodic-octomap-msgs, ros-melodic-roscpp, ros-melodic-sensor-msgs
+Homepage: http://github.com/anybotics/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-melodic-grid-map-demos
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-cv-bridge, ros-melodic-geometry-msgs, ros-melodic-grid-map-core, ros-melodic-grid-map-cv, ros-melodic-grid-map-filters, ros-melodic-grid-map-loader, ros-melodic-grid-map-msgs, ros-melodic-grid-map-octomap, ros-melodic-grid-map-ros, ros-melodic-grid-map-rviz-plugin, ros-melodic-grid-map-visualization, ros-melodic-octomap-msgs, ros-melodic-roscpp, ros-melodic-sensor-msgs
+Description: Demo nodes to demonstrate the usage of the grid map library.
