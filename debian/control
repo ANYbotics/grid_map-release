@@ -1,0 +1,12 @@
+Source: ros-noetic-grid-map-demos
+Section: misc
+Priority: optional
+Maintainer: Maximilian Wulf <mwulf@anybotics.com>
+Build-Depends: debhelper (>= 9.0.0), libgtest-dev, ros-noetic-catkin, ros-noetic-cv-bridge, ros-noetic-geometry-msgs, ros-noetic-grid-map-core, ros-noetic-grid-map-cv, ros-noetic-grid-map-filters, ros-noetic-grid-map-loader, ros-noetic-grid-map-msgs, ros-noetic-grid-map-octomap, ros-noetic-grid-map-ros, ros-noetic-grid-map-rviz-plugin, ros-noetic-grid-map-visualization, ros-noetic-octomap-msgs, ros-noetic-roscpp, ros-noetic-sensor-msgs
+Homepage: http://github.com/anybotics/grid_map
+Standards-Version: 3.9.2
+
+Package: ros-noetic-grid-map-demos
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-cv-bridge, ros-noetic-geometry-msgs, ros-noetic-grid-map-core, ros-noetic-grid-map-cv, ros-noetic-grid-map-filters, ros-noetic-grid-map-loader, ros-noetic-grid-map-msgs, ros-noetic-grid-map-octomap, ros-noetic-grid-map-ros, ros-noetic-grid-map-rviz-plugin, ros-noetic-grid-map-visualization, ros-noetic-octomap-msgs, ros-noetic-roscpp, ros-noetic-sensor-msgs
+Description: Demo nodes to demonstrate the usage of the grid map library.
